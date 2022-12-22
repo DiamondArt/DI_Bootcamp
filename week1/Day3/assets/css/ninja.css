@@ -1,0 +1,32 @@
+body {
+    background-color: #ECF0F1;
+    padding: 30px 25%;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr)  ;
+    grid-template-rows: repeat(5, 1fr) ;
+    justify-content: center;
+}
+
+
+#container div {
+    background-color: #d9d9d9;
+    border: 2px solid black;
+}
+
+/* .black {
+    background-color: #000;
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+    color: #000;
+} */

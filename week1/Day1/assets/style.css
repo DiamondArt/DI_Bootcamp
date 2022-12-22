@@ -1,0 +1,209 @@
+*{
+margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/*******************
+    CAT SITE CSS
+********************/
+.catsite-header{
+    height: 200px;
+    width: 100%;
+    background: url(./cat.jpeg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+}
+.catsite-header h1{
+    color: #11d6b0;
+    padding-top: 50px;
+    padding-left: 5px;
+}
+.about{
+    margin: 15px;
+}
+.about h3 {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    text-decoration: overline;
+}
+.about h2{
+    border-bottom: 1px solid rgb(203, 203, 203);
+    margin-bottom: 15px;
+}
+.about h4{
+    padding: 10px;
+    text-decoration: underline;
+    color: #0cb090;
+}
+ul li {
+    color: #0cb090;
+}
+.bordered{
+    border: 3px solid #0cb090;
+    padding: 10px;
+    text-align: center;
+    color: #0cb090;
+    font-size: 18px;
+    font-weight: 600;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+.medias{
+    display: flex;
+    justify-content: center;
+}
+.medias img{
+    border: 3px inset #e7eaf0;
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+table, th,td{
+    border: 1px solid rgb(171, 171, 171);
+    padding: 8px;
+}
+table{
+    margin-top:20px ;
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto
+}
+tbody td{
+    padding: 18px;
+}
+
+/*****************************
+        LANDINGPAGE  CSS
+******************************/
+
+.landing-header{
+    background: url(./fish.webp) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+}
+nav {
+    background: #edeef0;
+    padding: 15px 50px;
+}
+nav li{
+    display: inline-block;
+}
+li.float{
+    float: right;
+}
+li span{
+    color: rgb(0, 115, 255);
+    font-weight: bold;
+}
+.btn-blue{
+    background: rgb(0, 115, 255);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-sm{
+    width: 100px;
+}
+
+.text-overlay{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+.text-overlay h1{
+    font-size: 35px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.subscription{
+    margin-top: 20px;
+}
+
+input{
+    width: 300px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+.grid-item{
+    padding: 50px;
+}
+.grid-item p{
+    color: gray;
+    margin-top: 10px;
+}
+.icone h1{
+    font-size: 40px;
+    color: rgb(0, 115, 255);
+}
+
+/*****************************
+        DAILY CHALLENGE  CSS
+******************************/
+
+
+
+.challenge-header{
+    background: url(./thor.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* height: 120vh; */
+}
+.challenge-header nav {
+    background: rgb(34, 34, 34);
+}
+li.nav-link{
+    float: right;
+    padding: 0px 15px;
+}
+li.nav-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.text-overlay-2 {
+    position: relative;
+    /* top: 10em; */
+    margin: 20px;
+
+    /* font-size: 35px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif; */
+}
+li.logo{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+    color: white;
+}
+div.title{
+    font-size: 30px;
+}
+div.desc{
+    width: 400px;
+}
+
+@media screen and (max-width: 780px){
+    /* For mobile phones: */
+
+    .grid-3{
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  
+  }
+  
