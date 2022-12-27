@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+}
+
+/*****************************
+        DAILY CHALLENGE  CSS
+******************************/
+
+.challenge-header{
+    background: url(./img/thor.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.challenge-header nav {
+    background: rgb(155, 16, 16);
+}
+nav li{
+    display: inline-block;
+}
+li.float{
+    float: right;
+}
+li.nav-link{
+    float: right;
+    padding: 15px;
+}
+li.nav-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.text-overlay-2 {
+    position: relative;
+    margin: 20px;
+}
+li.logo{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+    color: white;
+}
+div.title{
+    font-size: 35px;
+}
+div.desc{
+    width: 400px;
+}
+@media screen and (max-width: 768px){
+    /* For mobile phones: */
+    div.title{
+        font-size: 25px;
+    }
+    .grid-3{
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    /* For mobile phones: */
+    div.title{
+        font-size: 25px;
+    }
+    .grid-3{
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  
+  }
+  
