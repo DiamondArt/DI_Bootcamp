@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container p {
+          background: yellow;
+          color: red;
+        }
+        #containers {
+          width: 400px;
+          height: 250px;
+          position: relative;
+          background: rgb(24, 24, 23);
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: rgb(215, 95, 95);
+        }
+        #target {
+          width: 400px;
+          height: 200px;
+          position: relative;
+          background: rgb(1, 245, 188);
+        }
+        #box {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          border-radius: 5px;
+          background-color: rgb(47, 45, 45);
+          color: aliceblue;
+        }
+        .over {
+        border: 3px dashed #000;
+        }
+    section#exo1, section#exo2, section#exo3{
+        display: none;
+        border: 1px solid gray;
+        padding: 20px;
+        height: 50vh;
+        text-align: center;
+        margin: 65px;
+    }
+    #display-exo{
+        text-align: center;
+    }
+    #display-exo button{
+        height: 50px;
+        width: 200px;
+        background: azure;
+        border: 1px solid black;
+    }
+    section button{
+        background: rgb(0, 128, 255);
+        color: white;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="display-exo">
+        <h3>Click to show exercise content</h3>
+        <button id="exo1">Exercise 1: Timer</button>
+        <button id="exo2">Exercise 2 : Move The Box </button>
+        <button id="exo3">Exercise 3: Drag & Drop</button>
+    </div>
+    <section id="exo1">
+        <ul>
+            <li>Show alert message</li>
+            <li>Add dynamic paragraph every 2 sec</li>
+            <li>auto clear interval after <b>five paragraph</b> or click button to clear</li>
+        </ul>
+        <div id="container"></div>
+        <button id="clear">Clear Interval</button>
+    </section>
+    <section id="exo2">
+        <ul>
+            <li>Move box at the end area when clicked button</li>
+        </ul>
+        <p><button id="move" onclick="myMove()">Click Me</button></p>
+        <div id="containers">
+        <div id="animate"></div>
+        </div>
+    </section>
+    <section id="exo3">
+        <ul>
+            <li>drag or drop in area</li>
+        </ul>
+        <div id="target"></div>
+        <br>
+        <div id="box" draggable="true">move</div>
+    </section>    
+    <script src="./index.js"></script>
+</body>
+</html>

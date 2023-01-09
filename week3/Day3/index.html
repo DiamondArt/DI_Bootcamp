@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="banner">
+        hello, waiting please ...
+    </div>
+    <script>
+       let banner = document.getElementById('banner');
+       let seconde  = new Date().getSeconds()
+
+       function display(){
+            banner.innerHTML = `The sales end in ${seconde} sec!`;
+            banner.style = "background: green; color: white; padding:15px"
+       }
+
+      let time = setInterval(display,4000)
+      if(seconde == 0){
+
+        
+      }
+    </script>
+</body>
+</html>
